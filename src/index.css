@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Quicksand&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 12rem;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar h1 {
+  font-size: 2rem;
+}
+
+.Navbar .links {
+  display: flex;
+}
+
+.Navbar .links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.15rem;
+}
+
+.Navbar .links a:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.BlogLists {
+  margin-top: 3rem;
+}
+
+.BlogLists h1 {
+  font-size: 1.6rem;
+}
+
+.blog-preview {
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.blog-preview .Link {
+  text-decoration: none;
+  color: gray;
+}
+
+.blog-preview .Link:hover {
+  color: blue;
+}
+
+.blog-preview .blog-body {
+  display: flex;
+  text-align: justify;
+  margin: 0.5rem 0;
+  font-size: 1.15rem;
+  line-height: 2rem;
+}
+
+.blog-preview .blog-author {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  opacity: 0.6;
+  display: flex;
+  justify-content: end;
+}
+.blog-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-preview .delete {
+  border: none;
+  background-color: rgb(236, 1, 1);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 3rem auto 0 auto;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.create-blog,
+.blog-details {
+  margin-top: 3rem;
+}
+
+.create-blog form {
+  padding: 1rem 7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-blog form label,
+.create-blog form input,
+.create-blog form textarea,
+.create-blog form select,
+.create-blog form button {
+  margin-top: 0.8rem;
+  outline: none;
+}
+
+.create-blog form input,
+.create-blog form textarea,
+.create-blog form select {
+  padding: 0.3rem 0.8rem;
+  font-size: 1rem;
+}
+
+.create-blog form button {
+  cursor: pointer;
+  margin: 1.8rem auto;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.6rem;
+}
+
+.create-blog form select {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.Error {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Error h2 {
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+.Error p {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.Error a {
+  text-decoration: none;
+  color: blue;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
